@@ -1,2 +1,2 @@
-# gem-api-cli
-gemini custom api tool for use from terminal
+# py_gem_cli
+python Gemini CLI custom api tool
