@@ -18,9 +18,15 @@ Clone the repository and synchronize the environment. `uv` will automatically pr
 uv sync
 ```
 
-### 3. Configure Environment
+### 3. Create API-token
+go to https://aistudio.google.com/api-keys and create api-token
+cmd:
+```cmd
+set "GEMINI_API_KEY=your_api_key_here"
 ```
-GEMINI_API_KEY=your_secret_api_key_here
+powershell:
+```powershell
+$env:GEMINI_API_KEY = "your_api_key_here"
 ```
 
 ### 4. Run
