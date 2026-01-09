@@ -1,0 +1,29 @@
+#config.yaml
+auth:
+  api_key: "${GEMINI_API_KEY}" # write here or use in %VAR%
+
+model_settings:
+  name: "gemini-2.5-flash"
+  temperature: 0.2        # than less, tham more strong and good code (0.0 - 1.0)
+  top_p: 0.8
+  max_tokens: 4096        # limit answer
+
+processing:
+  system_instruction_path: "system_prompts/senior_dev.md"
+  include_diff: true      # need gen diff for patches?
+  exclude_patterns:
+      - "*.pyc"
+      - "__pycache__"
+      - ".git"
+      - "venv"
+      - ".env"
+      - "*.log"
+      - ".vscode"
+
+ui:
+  theme: "dark"
+  show_spinner: true
+  colors:
+    user: "cyan"
+    bot: "purple"
+    error: "red"
