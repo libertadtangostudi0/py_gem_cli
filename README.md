@@ -20,6 +20,7 @@ uv sync
 
 ### 3. Create API-token
 go to https://aistudio.google.com/api-keys and create api-token
+
 cmd:
 ```cmd
 set "GEMINI_API_KEY=your_api_key_here"
